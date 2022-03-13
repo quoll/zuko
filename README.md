@@ -1,13 +1,13 @@
-# Zuko [![Build Status](https://travis-ci.org/threatgrid/zuko.svg?branch=main)](https://travis-ci.org/threatgrid/zuko) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
+# Zuko [![Build Status](https://travis-ci.org/quoll/zuko.svg?branch=main)](https://travis-ci.org/quoll/zuko) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](CODE_OF_CONDUCT.md)
 
 This is a Clojure/ClojureScript library that works with other Threatgrid data applications.
 
 [![Clojars Project](http://clojars.org/org.clojars.quoll/zuko/latest-version.svg)](http://clojars.org/org.clojars.quoll/zuko)
 
 The initial applications using this library are
-[Naga](https://github.com/threatgrid/naga) and [Asami](https://github.com/threatgrid/asami).
+[Naga](https://github.com/quoll/naga) and [Asami](https://github.com/quoll/asami).
 
-- Projecting data into tuples suitable for query results or insertion into a graph database. Generation of this data with Zuko is discussed in [Asami](https://github.com/threatgrid/asami/wiki/Entity-Structure).
+- Projecting data into tuples suitable for query results or insertion into a graph database. Generation of this data with Zuko is discussed in [Asami](https://github.com/quoll/asami/wiki/Entity-Structure).
 - Logging in Clojure or ClojureScript
 - General utilities to avoid duplicating code between projects.
 
@@ -149,6 +149,7 @@ Removes the resource identified by `path`. Returns `true` if the resource existe
 ## License
 
 Copyright © 2020-2021 Cisco Systems
+Copyright © 2022 Paula Gearon
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
