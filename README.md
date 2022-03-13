@@ -149,6 +149,7 @@ Removes the resource identified by `path`. Returns `true` if the resource existe
 ## License
 
 Copyright © 2020-2021 Cisco Systems
+
 Copyright © 2022 Paula Gearon
 
 This program and the accompanying materials are made available under the
