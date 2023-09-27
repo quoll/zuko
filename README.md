@@ -18,7 +18,7 @@ Include a dependency to this library.
 In Leiningen:
 
 ```clojure
-[org.clojars.quoll/zuko "0.6.5"]
+[org.clojars.quoll/zuko "0.6.6"]
 ```
 
 In `deps.edn`:
@@ -26,7 +26,7 @@ In `deps.edn`:
 ```clojure
 {
   :deps {
-    org.clojars.quoll/zuko {:mvn/version "0.6.5"}
+    org.clojars.quoll/zuko {:mvn/version "0.6.6"}
   }
 }
 ```
@@ -150,7 +150,7 @@ Removes the resource identified by `path`. Returns `true` if the resource existe
 
 Copyright © 2020-2021 Cisco Systems
 
-Copyright © 2022 Paula Gearon
+Copyright © 2022-2023 Paula Gearon
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at

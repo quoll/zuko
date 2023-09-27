@@ -1,4 +1,4 @@
-(defproject org.clojars.quoll/zuko "0.6.5"
+(defproject org.clojars.quoll/zuko "0.6.6"
   :description "Threatgrid library for common graph database functionality"
   :url "https://github.com/threatgrid/zuko"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
@@ -11,7 +11,7 @@
     :dev {
       :dependencies [[org.clojure/clojurescript "1.10.866"]
                      [org.clojars.quoll/qtest "0.1.1"]
-                     [org.clojars.quoll/asami "2.0.0"]]}}
+                     [org.clojars.quoll/asami "2.3.3"]]}}
   :cljsbuild {
     :builds {
       :dev
@@ -20,14 +20,14 @@
          :output-to "out/zuko/core.js"
          :optimizations :simple
          :pretty-print true}
-       :dependencies [[org.clojars.quoll/asami "2.0.0"]]}
+       :dependencies [[org.clojars.quoll/asami "2.3.3"]]}
       :test
       {:source-paths ["src" "test"]
        :compiler {
          :output-to "out/zuko/test_memory.js"
          :optimizations :simple
          :pretty-print true}
-       :dependencies [[org.clojars.quoll/asami "2.0.0"]]}
+       :dependencies [[org.clojars.quoll/asami "2.3.3"]]}
       }
     :test-commands {
       "unit" ["node" "out/zuko/test_memory.js"]}})
