@@ -30,11 +30,15 @@
        (let [f (first pattern)]
          (and (boolean f) (not (seq? f))))))
 
-(def Var (s/constrained s/Symbol (comp #{\? \%} first #(or (namespace %) (name %)))))
+(def var-marker? #{\? \%})
+
+(def Var (s/constrained s/Symbol #(or (var-marker? (first (name %)))
+                                      (var-marker? (first (namespace %))))))
 
 (s/defn vartest? :- s/Bool
   [x]
-  (and (symbol? x) (boolean (#{\? \%} (first (or (namespace x) (name x)))))))
+  (and (symbol? x) (boolean (or (var-marker? (first (name x)))
+                                (var-marker? (first (namespace x)))))))
 
 (defn ^:deprecated vars [c] (filter vartest? c))
 
